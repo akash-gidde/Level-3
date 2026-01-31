@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Commerce Website</title>
+  <style>
+    body { font-family: Arial; text-align: center; }
+    .product { border: 1px solid #ccc; padding: 15px; margin: 10px; display: inline-block; }
+    button { padding: 8px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h1>E-Commerce Website</h1>
+<h2>Products</h2>
+
+<div class="product">
+  <p>Product 1 – ₹500</p>
+  <button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="product">
+  <p>Product 2 – ₹700</p>
+  <button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<h3 id="cart">Cart Items: 0</h3>
+
+<script>
+  let count = 0;
+  function addToCart() {
+    count++;
+    document.getElementById("cart").innerText = "Cart Items: " + count;
+  }
+</script>
+
+</body>
+</html>
